@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+body {
+  font-family: 'Oswald', sans-serif;
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  background-color: navy;
+  background-image: url(cuttlefish.jpeg);
+  color: white;
+}
+header {
+  background-color: black;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+.btn-1 {
+  height: 38px;
+  background-color: navy;
+  border: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+header ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+header li {
+  list-style: none;
+  padding: 0 20px;
+}
+header a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+header .highlight, header #current a {
+  color: #5ccafd;
+  font-weight: bold;
+}
+header a:hover {
+  color: #ccc;
+  font-weight: bold;
+}
+#newsletter {
+  background-color: #2d2b3e;
+  padding: 15px;
+  color: #fff;
+}
+#newsletter .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#newsletter input {
+  padding: 4px;
+  height: 25px;
+  width: 250px;
+}
+#about {
+  background-color: #2d2b3e;
+  padding: 20px;
+}
+#about .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 50px;
+}
+footer {
+  background-color: #2d2b3e;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+#submarine .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column-gap: 50px;
+}
+@media (max-width: 768px) {
+  header .container,
+  #newsletter .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  #about .container,
+  #submarine .container {
+    grid-template-columns: 1fr;
+  }
+}
